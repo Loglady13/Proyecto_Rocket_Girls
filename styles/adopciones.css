@@ -1,0 +1,36 @@
+
+
+
+.perritos {
+    display: flex;
+    flex-direction: row; 
+  }
+.perro {
+    display: inline;
+    gap: 20px;
+}
+
+.perritos2 {
+  display: flex;
+  flex-direction: row; 
+}
+.perro2 {
+  display: inline;
+  gap: 20px;
+}
+.gatitos {
+  display: flex;
+  flex-direction: row; 
+}
+.gato {
+  display: inline;
+  gap: 20px;
+}
+
+.espacio{
+  margin: 20px;
+}
+
+
+
+  

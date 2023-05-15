@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Patitas Felices</title>
+    <link rel="stylesheet" href="../Proyecto_Rocket_Girls/styles/principal.css"> 
+</head>
+<body>
+    <header>
+        <nav href="../Proyecto_Rocket_Girls/images/logo2.png">
+            <img src="../Proyecto_Rocket_Girls/images/logo2.png" alt="Patitas felices">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="../Proyecto_Rocket_Girls/html/adopciones.html">Adopciones</a></li>
+                <li><a href="../Proyecto_Rocket_Girls/html/buscados.html">Extravíos y animalitos buscados</a></li>
+                <li><a href="../Proyecto_Rocket_Girls/html/castraciones.html">Campañas de castración</a></li>
+                <li><a href="#QuienesSomos">Quiénes somos</a></li>
+                <li><a href="#Contactenos">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <h1>Fundación Patitas Felices<h1>
+    </header>
+    <main>
+        <section id="QuienesSomos">
+            <h2 id="quienesSomos">¿Quiénes Somos?</h2>
+            <p>Patitas Felices es una Fundación sin fines de lucro que busca cómo ayudar a los peluditos que nos hacen los días felices,
+            nuestro objetivo principal es lograr que todos los animalitos dispongan de un buen hogar y mucho amor, y acabar con el 
+            abandono de animales en Costa Rica.En nuestra página web encontrarás diversa información acerca de perros y gatos para adopción, campañas de castración e
+            información acerca de animales que han sido encontrados extraviados o dueños que buscan a sus mascotas perdidas. 
+            Por favor contacta con nosotros si deseas unirte a la causa, para publicar a tu animalito o si tienes información 
+            a cerca de campañas de castración cercanas, será un gusto hacerte parte!</p>
+        </section>
+        <section id="Contactenos">
+        <div class="Contactenos">
+            <div class="contacto1">
+            <h2 class="contacto">Contáctenos</h2>
+            <form action="./php/formulario.php" method="post" autocomplete="off">
+                <label for="inputNombre">Nombre:</label>
+                <input type="text" id="inputNombre" class="estilosInput" name="inputNombre">
+                <br>
+                <label for="">Correo:</label>
+                <input type="email" id="correo" class="estilosInput">
+                <br>
+                <label for="">Edad:</label>
+                <input type="number" id="edad">
+                <br>
+                <label for="consulta">Tipo de consulta:</label>
+                <input list="tipoConsulta" id="consulta" name="consulta">
+                <datalist id="tipoConsulta">
+                    <option value="Adopciones"></option>
+                    <option value="Castraciones"></option>
+                    <option value="Extravíos"></option>
+                </datalist>
+                <br>
+                <label for="comentarios">Mensaje:</label>
+                <textarea name="comentarios" id="comentarios" cols="20" rows="3"></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+            </div>
+            <div class="contacto2">
+                <h2 class="contacto3">Llámenos:</h2>
+                <h4>+506 64345608</h4>
+                <h4>+506 83123183</h4>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Derechos reservados &copy; Raschell Jarquín 2023
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

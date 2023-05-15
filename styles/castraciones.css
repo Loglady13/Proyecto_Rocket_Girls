@@ -1,0 +1,16 @@
+.castraciones{
+    display: flex;
+    flex-direction: row;
+}
+.castraciones2{
+    display: flex;
+    flex-direction: row;
+}
+.castracion{
+    display: inline;
+    gap: 20px;
+}
+
+.espacio{
+    margin: 20px;
+}
