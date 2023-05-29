@@ -1,20 +1,39 @@
 body{
-    background: #fff;
+    background-image: url(../images/gradiente.jpg);
     margin: 0;
     padding: 0;
+    border: 2px solid #1f5c6f;
     
 }
 header{
-    background: #fff;
-    border: 2px solid #1f5c6f;
+  height: 60px;
+  width: 100%;
+  background-color: #1f5c6f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fix;
+  z-index: 2000; 
+    
+}
+.main-container{
+  max-width: 1200px;
+  width: 90%;
+  
+  height: inherit;
+  
 }
 
-nav {
-  background-color: #428ea5;
-  color: #fff;
-  display: flex; /* Convertir el contenedor en un contenedor flexible */
-  font-family: Arial;
+
+header .main-container nav{
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
   
+
 }
 nav img{
   margin-right: auto;
@@ -25,22 +44,28 @@ nav ul {
   margin: 2;
   padding: 4;
   justify-content: right;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
-nav ul li {
-  display: inline-block;
+header .main-container nav ul{
+  list-style: none;
+  display: inline;
 }
 
-nav ul li a {
+header .main-container nav ul li{
+  display: inline;
+}
+
+header .main-container nav ul li a{
   color: #fff;
-  display: block;
-  padding: 10px;
+  padding: 19px;
   text-decoration: none;
-  text-align: right;
 }
-
-nav ul li a:hover {
-  background-color: #1f5c6f;
+header .main-container nav ul li a:hover{
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 @font-face{
@@ -65,10 +90,7 @@ nav ul li a:hover {
   src: url(../fonts/LEMONMILK_Medium.otf)
 }
 
-main{
-    background: #fff;
-    border: 2px solid #1f5c6f;
-}
+
 h1{
   background-color: #1f5c6f;
   text-align: center;
@@ -85,8 +107,16 @@ h2#quienesSomos{
 
 }
 
+h2#contactenos{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Lemonmilk Medium';
+  color: #1f5c6f;
+
+}
+
 .Contactenos{
-  background-color: aliceblue;
+
   display: flex;
   flex-direction: row;
   height: 500px;
@@ -97,7 +127,6 @@ h2#quienesSomos{
 
 .contacto1{
   width: 200px;
-  font-family: 'Dancing Script', cursive;
   background-color: #1f5c6f;
   height: 450px;
   font-size: 20px;
@@ -106,7 +135,6 @@ h2#quienesSomos{
 
 .contacto2{
   width: 400px;
-  font-family: 'Dancing Script', cursive;
   background-image: url(../images/fondo3.jpg);
   height: 450px;
   font-size: 20px;
@@ -114,9 +142,11 @@ h2#quienesSomos{
 }
 .contacto{
   color:#fff;
+  font-family: 'Lemonmilk Medium';
 }
 .contacto3{
   color:#fff;
+  font-family: 'Lemonmilk Medium';
 }
 h1{
     margin: 50px;
@@ -127,5 +157,6 @@ h1{
     margin: 50px;
     font-size: 17px;
     font-family: Helvetica, sans-serif;
+    color: #FFf;
 
  } 

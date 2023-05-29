@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundación Patitas Felices</title>
+    <link rel="shortcut icon" href="../Proyecto_Rocket_Girls/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../Proyecto_Rocket_Girls/styles/principal.css"> 
 </head>
 <body>
     <header>
-        <nav href="../Proyecto_Rocket_Girls/images/logo2.png">
+        <div class="main-container">
+            <nav href="../Proyecto_Rocket_Girls/images/logo2.png">
             <img src="../Proyecto_Rocket_Girls/images/logo2.png" alt="Patitas felices">
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -20,9 +22,12 @@
                 <li><a href="#Contactenos">Contáctenos</a></li>
             </ul>
         </nav>
-        <h1>Fundación Patitas Felices<h1>
+        </div>
     </header>
     <main>
+        <section id="titulo">
+            <h1>Fundación Patitas Felices</h1>
+        </section>
         <section id="QuienesSomos">
             <h2 id="quienesSomos">¿Quiénes Somos?</h2>
             <p>Patitas Felices es una Fundación sin fines de lucro que busca cómo ayudar a los peluditos que nos hacen los días felices,
@@ -33,9 +38,10 @@
             a cerca de campañas de castración cercanas, será un gusto hacerte parte!</p>
         </section>
         <section id="Contactenos">
+            <h2 id="contactenos">Contáctenos</h2>
         <div class="Contactenos">
             <div class="contacto1">
-            <h2 class="contacto">Contáctenos</h2>
+            <h2 class="contacto">Mensaje</h2>
             <form action="./php/formulario.php" method="post" autocomplete="off">
                 <label for="inputNombre">Nombre:</label>
                 <input type="text" id="inputNombre" class="estilosInput" name="inputNombre">
